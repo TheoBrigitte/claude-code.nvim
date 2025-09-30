@@ -134,16 +134,16 @@ M.default_config = {
       },
     },
     window_navigation = {
-      enabled = true,  -- Enable window navigation keymaps
-      left = '<C-h>',  -- Move to left window
-      down = '<C-j>',  -- Move to down window
-      up = '<C-k>',    -- Move to up window
+      enabled = true, -- Enable window navigation keymaps
+      left = '<C-h>', -- Move to left window
+      down = '<C-j>', -- Move to down window
+      up = '<C-k>', -- Move to up window
       right = '<C-l>', -- Move to right window
     },
     scrolling = {
       enabled = true, -- Enable scrolling keymaps
       page_down = '<C-f>', -- Scroll down one page
-      page_up = '<C-b>',   -- Scroll up one page
+      page_up = '<C-b>', -- Scroll up one page
     },
   },
 }
@@ -368,7 +368,7 @@ local function validate_keymaps_config(keymaps)
   end
 
   if type(keymaps.window_navigation.enabled) ~= 'boolean' then
-    return false, 'keymaps.window_navigation.enabled must be a table'
+    return false, 'keymaps.window_navigation.enabled boolean'
   end
 
   if type(keymaps.window_navigation.left) ~= 'string' then

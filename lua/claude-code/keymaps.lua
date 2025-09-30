@@ -165,7 +165,7 @@ function M.setup_terminal_navigation(claude_code, config)
       vim.api.nvim_buf_set_keymap(
         buf,
         'n',
-       config.keymaps.window_navigation.right,
+        config.keymaps.window_navigation.right,
         [[<C-w>l:lua require("claude-code").force_insert_mode()<CR>]],
         { noremap = true, silent = true, desc = 'Window: move right' }
       )
