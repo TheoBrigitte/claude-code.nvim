@@ -388,7 +388,7 @@ local function validate_keymaps_config(keymaps)
   end
 
   if type(keymaps.scrolling) ~= 'table' then
-    return false, 'keymaps.scrolling must be a btable'
+    return false, 'keymaps.scrolling must be a table'
   end
 
   if type(keymaps.scrolling.enabled) ~= 'boolean' then
